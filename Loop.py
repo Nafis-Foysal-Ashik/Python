@@ -69,3 +69,17 @@ for i in sec:
 
 for i in range(6):
     pass # pass is used for future expansion
+
+num = range(11)
+sum=0
+for i in num:
+    sum+=i
+
+print(sum)
+
+#factorial
+sum=1
+for i in range(5):
+    sum*=i+1
+
+print(sum)
