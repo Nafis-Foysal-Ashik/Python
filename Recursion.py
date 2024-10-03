@@ -18,3 +18,12 @@ def rec_fact(n):
 
 x = rec_fact(5)
 print(x)
+
+def print_list(list , idx):
+    if(idx==len(list)):
+        return
+    print(list[idx])
+    print_list(list , idx+1)
+
+num = [1,2,3,4,5,6,7]
+print_list(num,0)
