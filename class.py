@@ -97,3 +97,31 @@ x.get_bal()
 
 x.credit(1050)
 x.get_bal()
+
+
+#object delete
+
+class Employee:
+    def __init__(self , name , salary):
+        self.name = name
+        self.salary = salary
+    def detaile(self):
+        print("Name : ",self.name , "Salary : ",self.salary)
+    
+x = Employee("Nafis" , 12000)
+del x
+# x.detaile() -> this will give error because it is deleted
+
+#private public consept
+
+class Person:
+    __name = "anonymous"
+
+    def __hello(self , name):
+        print("Hello , " ,name)
+    
+    def welcome(self , name):
+        self.__hello(name)
+    
+x = Person()
+x.welcome("Nafis")
